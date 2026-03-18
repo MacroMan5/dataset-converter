@@ -124,6 +124,16 @@ dataset_yolo.zip
     └── val/
 ```
 
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+Adding a new export format is ~30 lines — just write an `export_xxx()` function and add it to the `EXPORTERS` dict.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for release history.
+
 ## License
 
 MIT
