@@ -13,11 +13,13 @@ Auto-detects class IDs from label files and lets you name them.
 No dependencies required — uses only Python standard library + tkinter.
 
 Usage:
-    python dataset_converter.py                  # Launch GUI
-    python dataset_converter.py --cli -i dataset/ -f cvat -c head player
+    dataset-converter                            # Launch GUI (after pip install)
+    dataset-converter --cli -i dataset/ -f cvat -c head player
 """
 
 from __future__ import annotations
+
+__version__ = "1.0.0"
 
 import argparse
 import random

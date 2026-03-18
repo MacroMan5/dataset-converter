@@ -4,7 +4,22 @@ Simple GUI tool to convert YOLO-format datasets into ready-to-import archives fo
 
 ![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)
 ![No Dependencies](https://img.shields.io/badge/dependencies-none-green.svg)
+[![PyPI](https://img.shields.io/pypi/v/dataset-converter)](https://pypi.org/project/dataset-converter/)
 ![License MIT](https://img.shields.io/badge/license-MIT-green.svg)
+
+## Install
+
+```bash
+pip install dataset-converter
+```
+
+Or from source:
+
+```bash
+git clone https://github.com/MacroMan5/dataset-converter.git
+cd dataset-converter
+pip install .
+```
 
 ## Features
 
@@ -21,7 +36,7 @@ Simple GUI tool to convert YOLO-format datasets into ready-to-import archives fo
 ### GUI
 
 ```bash
-python dataset_converter.py
+dataset-converter
 ```
 
 1. **Browse** → select your dataset folder (with `images/` and `labels/` subfolders)
@@ -33,19 +48,19 @@ python dataset_converter.py
 
 ```bash
 # Auto-detect classes (names default to class_0, class_1, ...)
-python dataset_converter.py --cli -i path/to/dataset -f cvat
+dataset-converter --cli -i path/to/dataset -f cvat
 
 # Name your classes explicitly
-python dataset_converter.py --cli -i path/to/dataset -f cvat -c dog cat bird
+dataset-converter --cli -i path/to/dataset -f cvat -c dog cat bird
 
 # Roboflow format
-python dataset_converter.py --cli -i path/to/dataset -f roboflow -c head player
+dataset-converter --cli -i path/to/dataset -f roboflow -c head player
 
 # YOLO with 80/20 train/val split
-python dataset_converter.py --cli -i path/to/dataset -f yolo -c head player
+dataset-converter --cli -i path/to/dataset -f yolo -c head player
 
 # Export images only (no annotations) for fresh labeling
-python dataset_converter.py --cli -i path/to/dataset -f cvat --no-labels
+dataset-converter --cli -i path/to/dataset -f cvat --no-labels
 ```
 
 ## Expected Input Format
