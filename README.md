@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="icon.png" alt="Dataset Converter" width="128">
+</p>
+
 # Dataset Converter
 
 Simple GUI tool to convert YOLO-format datasets into ready-to-import archives for annotation platforms.
